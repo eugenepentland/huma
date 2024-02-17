@@ -13,7 +13,7 @@ import (
 	"time"
 
 	"github.com/danielgtaylor/huma/v2"
-	"github.com/labstack/echo/v4"
+	"github.com/labstack/echo/v5"
 )
 
 var lastModified = time.Now()
@@ -108,7 +108,7 @@ func BenchmarkRawEcho(b *testing.B) {
 		res := &huma.ValidateResult{}
 
 		// Read and validate params
-		id := c.Param("id")
+		id := c.PathParam("id")
 		huma.Validate(registry, strSchema, pb, huma.ModeReadFromServer, id, res)
 
 		ct := r.Header.Get("Content-Type")
@@ -215,7 +215,7 @@ func BenchmarkRawEchoFast(b *testing.B) {
 		w.Header().Set("Last-Modified", lastModified.Format(http.TimeFormat))
 		w.WriteHeader(http.StatusOK)
 		resp := &GreetingOutput{}
-		resp.Greeting = "Hello, " + c.Param("id") + input.Suffix
+		resp.Greeting = "Hello, " + c.PathParam("id") + input.Suffix
 		resp.Suffix = input.Suffix
 		resp.Length = len(resp.Greeting)
 		resp.ContentType = c.Request().Header.Get("Content-Type")

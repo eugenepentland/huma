@@ -10,7 +10,7 @@ import (
 	"time"
 
 	"github.com/danielgtaylor/huma/v2"
-	"github.com/labstack/echo/v4"
+	"github.com/labstack/echo/v5"
 )
 
 // MultipartMaxMemory is the maximum memory to use when parsing multipart
@@ -43,7 +43,7 @@ func (c *echoCtx) URL() url.URL {
 }
 
 func (c *echoCtx) Param(name string) string {
-	return c.orig.Param(name)
+	return c.orig.PathParam(name)
 }
 
 func (c *echoCtx) Query(name string) string {
