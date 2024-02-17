@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/danielgtaylor/huma/v2"
+	"github.com/eugenepentland/huma/v2"
 	"github.com/gofiber/fiber/v2"
 )
 

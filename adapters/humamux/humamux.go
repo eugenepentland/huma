@@ -8,8 +8,8 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/danielgtaylor/huma/v2"
-	"github.com/danielgtaylor/huma/v2/queryparam"
+	"github.com/eugenepentland/huma/v2"
+	"github.com/eugenepentland/huma/v2/queryparam"
 	"github.com/gorilla/mux"
 )
 

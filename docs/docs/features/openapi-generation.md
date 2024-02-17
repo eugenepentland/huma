@@ -8,7 +8,7 @@ description: API configuration options & OpenAPI 3.1 spec generation.
 
 Huma generates Open API 3.1 compatible JSON/YAML specs and provides rendered documentation automatically. Every operation that is registered with the API is included in the spec by default. The operation's inputs and outputs are used to generate the request and response parameters / schemas.
 
-The [`huma.Config`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#Config) controls where the OpenAPI, docs, and schemas are available. The default config uses `/openapi.json`, `/docs`, and `/schemas` respectively. You can change these to whatever you want, or disable them entirely by leaving them blank.
+The [`huma.Config`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#Config) controls where the OpenAPI, docs, and schemas are available. The default config uses `/openapi.json`, `/docs`, and `/schemas` respectively. You can change these to whatever you want, or disable them entirely by leaving them blank.
 
 You may want to customize the generated Open API spec. With Huma v2 you have full access and can modify it as needed in the API configuration or when registering operations. For example, to set up and then use a security scheme:
 
@@ -38,7 +38,7 @@ huma.Register(api, huma.Operation{
 
 !!! info "Spec"
 
-    See the [OpenAPI 3.1 spec](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md) and Huma's [OpenAPI struct](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#OpenAPI) for everything that can be set and how it is expected to be used.
+    See the [OpenAPI 3.1 spec](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md) and Huma's [OpenAPI struct](https://pkg.go.dev/github.com/eugenepentland/huma/v2#OpenAPI) for everything that can be set and how it is expected to be used.
 
 ## OpenAPI Settings Composition
 
@@ -60,7 +60,7 @@ huma.Register(api, withBearerAuth(huma.Operation{
 })
 ```
 
-Set this up however you like. Even the [`huma.Register`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#Register) function can be wrapped or replaced by your organization to ensure that all operations are registered with the same settings.
+Set this up however you like. Even the [`huma.Register`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#Register) function can be wrapped or replaced by your organization to ensure that all operations are registered with the same settings.
 
 ## Custom OpenAPI Extensions
 
@@ -91,10 +91,10 @@ Anything in the `Extensions` map will be flattened during serialization so that 
 -   Tutorial
     -   [Your First API](../tutorial/your-first-api.md) includes using the default config
 -   Reference
-    -   [`huma.Config`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#Config) the API config
-    -   [`huma.DefaultConfig`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#DefaultConfig) the default API config
-    -   [`huma.OpenAPI`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#OpenAPI) the OpenAPI spec
-    -   [`huma.API`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#API) the API instance
-    -   [`huma.Register`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#Register) registers new operations
+    -   [`huma.Config`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#Config) the API config
+    -   [`huma.DefaultConfig`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#DefaultConfig) the default API config
+    -   [`huma.OpenAPI`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#OpenAPI) the OpenAPI spec
+    -   [`huma.API`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#API) the API instance
+    -   [`huma.Register`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#Register) registers new operations
 -   External Links
     -   [OpenAPI 3.1 spec](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md)

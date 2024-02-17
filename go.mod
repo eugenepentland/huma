@@ -1,4 +1,4 @@
-module github.com/danielgtaylor/huma/v2
+module github.com/eugenepentland/huma/v2
 
 go 1.20
 

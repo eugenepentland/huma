@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	json2yaml "github.com/danielgtaylor/huma/v2/yaml"
+	json2yaml "github.com/eugenepentland/huma/v2/yaml"
 )
 
 func TestConvert(t *testing.T) {

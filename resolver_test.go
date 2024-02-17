@@ -9,7 +9,7 @@ import (
 	"net/http/httptest"
 	"strings"
 
-	"github.com/danielgtaylor/huma/v2"
+	"github.com/eugenepentland/huma/v2"
 	"github.com/go-chi/chi/v5"
 )
 

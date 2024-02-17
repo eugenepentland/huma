@@ -13,7 +13,7 @@ There are built-in utilities for handling [conditional requests](https://develop
 
 Adding support for handling conditional requests requires four steps:
 
-1. Import the [`github.com/danielgtaylor/huma/v2/conditional`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2/conditional) package.
+1. Import the [`github.com/eugenepentland/huma/v2/conditional`](https://pkg.go.dev/github.com/eugenepentland/huma/v2/conditional) package.
 2. (optional) Add the response definition (`304 Not Modified` for reads or `412 Precondition Failed` for writes)
 3. Add `conditional.Params` to your input struct.
 4. Check if conditional params were passed and handle them. The `HasConditionalParams()` and `PreconditionFailed(...)` methods can help with this.
@@ -56,7 +56,7 @@ huma.Register(api, huma.Operation{
 ## Dive Deeper
 
 -   Reference
-    -   [`conditional`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2/conditional) package
-    -   [`conditional.Params`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2/conditional/Params)
+    -   [`conditional`](https://pkg.go.dev/github.com/eugenepentland/huma/v2/conditional) package
+    -   [`conditional.Params`](https://pkg.go.dev/github.com/eugenepentland/huma/v2/conditional/Params)
 -   External Links
     -   [Conditional Requests](https://developer.mozilla.org/en-US/docs/Web/HTTP/Conditional_requests)

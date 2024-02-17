@@ -1,6 +1,6 @@
 ![Huma Rest API Framework](https://user-images.githubusercontent.com/106826/78105564-51102780-73a6-11ea-99ff-84d6c1b3e8df.png)
 
-[![HUMA Powered](https://img.shields.io/badge/Powered%20By-HUMA-f40273)](https://huma.rocks/) [![CI](https://github.com/danielgtaylor/huma/workflows/CI/badge.svg?branch=main)](https://github.com/danielgtaylor/huma/actions?query=workflow%3ACI+branch%3Amain++) [![codecov](https://codecov.io/gh/danielgtaylor/huma/branch/main/graph/badge.svg)](https://codecov.io/gh/danielgtaylor/huma) [![Docs](https://godoc.org/github.com/danielgtaylor/huma/v2?status.svg)](https://pkg.go.dev/github.com/danielgtaylor/huma/v2?tab=doc) [![Go Report Card](https://goreportcard.com/badge/github.com/danielgtaylor/huma/v2)](https://goreportcard.com/report/github.com/danielgtaylor/huma/v2)
+[![HUMA Powered](https://img.shields.io/badge/Powered%20By-HUMA-f40273)](https://huma.rocks/) [![CI](https://github.com/danielgtaylor/huma/workflows/CI/badge.svg?branch=main)](https://github.com/danielgtaylor/huma/actions?query=workflow%3ACI+branch%3Amain++) [![codecov](https://codecov.io/gh/danielgtaylor/huma/branch/main/graph/badge.svg)](https://codecov.io/gh/danielgtaylor/huma) [![Docs](https://godoc.org/github.com/eugenepentland/huma/v2?status.svg)](https://pkg.go.dev/github.com/eugenepentland/huma/v2?tab=doc) [![Go Report Card](https://goreportcard.com/badge/github.com/eugenepentland/huma/v2)](https://goreportcard.com/report/github.com/eugenepentland/huma/v2)
 
 - [What is huma?](#intro)
 - [Install](#install)
@@ -67,7 +67,7 @@ Install via `go get`. Note that Go 1.20 or newer is required.
 
 ```sh
 # After: go mod init ...
-go get -u github.com/danielgtaylor/huma/v2
+go get -u github.com/eugenepentland/huma/v2
 ```
 
 # Example
@@ -82,8 +82,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/danielgtaylor/huma/v2"
-	"github.com/danielgtaylor/huma/v2/adapters/humachi"
+	"github.com/eugenepentland/huma/v2"
+	"github.com/eugenepentland/huma/v2/adapters/humachi"
 	"github.com/go-chi/chi/v5"
 )
 
@@ -153,7 +153,7 @@ Even though the example is tiny you can also see some generated documentation at
 
 See the [https://huma.rocks/](https://huma.rocks/) website for full documentation in a presentation that's easier to navigate and search then this README. You can find the source for the site in the `docs` directory of this repo.
 
-Official Go package documentation can always be found at https://pkg.go.dev/github.com/danielgtaylor/huma/v2.
+Official Go package documentation can always be found at https://pkg.go.dev/github.com/eugenepentland/huma/v2.
 
 # Articles & Mentions
 

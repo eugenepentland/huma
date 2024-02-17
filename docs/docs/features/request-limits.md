@@ -64,10 +64,10 @@ Keep in mind that the body is read into memory before being passed to the handle
 ## Dive Deeper
 
 -   Reference
-    -   [`huma.Resolver`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#Resolver) is the basic interface
-    -   [`huma.ResolverWithPath`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#ResolverWithPath) has a path prefix
-    -   [`huma.Operation`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#Operation) the operation
-    -   [`huma.Context`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#Context) a router-agnostic request/response context
+    -   [`huma.Resolver`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#Resolver) is the basic interface
+    -   [`huma.ResolverWithPath`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#ResolverWithPath) has a path prefix
+    -   [`huma.Operation`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#Operation) the operation
+    -   [`huma.Context`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#Context) a router-agnostic request/response context
 -   External Links
     -   [Go Contexts](https://blog.golang.org/context) from the Go blog
     -   [`context.Context`](https://pkg.go.dev/context)

@@ -49,15 +49,15 @@ When using custom JSON Schemas, i.e. not generated from Go structs, it's possibl
 -   `anyOf` for matching one-or-more
 -   `allOf` for schema unions
 
-See [`huma.Schema`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#Schema) for more information. Note that it may be easier to use a custom [resolver](./request-resolvers.md) to implement some of these rules.
+See [`huma.Schema`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#Schema) for more information. Note that it may be easier to use a custom [resolver](./request-resolvers.md) to implement some of these rules.
 
 ## Dive Deeper
 
 -   Tutorial
     -   [Your First API](../tutorial/your-first-api.md) includes string length validation
 -   Reference
-    -   [`huma.Register`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#Register) registers new operations
-    -   [`huma.Operation`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#Operation) the operation
+    -   [`huma.Register`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#Register) registers new operations
+    -   [`huma.Operation`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#Operation) the operation
 -   External Links
     -   [JSON Schema Validation](https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema-validation-00)
     -   [OpenAPI 3.1 Schema Object](https://spec.openapis.org/oas/v3.1.0#schema-object)

@@ -151,7 +151,7 @@ Now you can run your service and use the new command: `go run . openapi`. Notice
 
 ### Custom Commands with Options
 
-If you want to access your custom options struct with custom commands, use the [`huma.WithOptions(func(cmd *cobra.Command, args []string, options *YourOptions)) func(cmd *cobra.Command, args []string)`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#WithOptions) utitity function. It ensures the options are parsed and available before running your command.
+If you want to access your custom options struct with custom commands, use the [`huma.WithOptions(func(cmd *cobra.Command, args []string, options *YourOptions)) func(cmd *cobra.Command, args []string)`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#WithOptions) utitity function. It ensures the options are parsed and available before running your command.
 
 !!! info "More Customization"
 
@@ -164,10 +164,10 @@ If you want to access your custom options struct with custom commands, use the [
 -   How-To
     -   [Graceful Shutdown](../how-to/graceful-shutdown.md) on service stop
 -   Reference
-    -   [`huma.CLI`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#CLI) the CLI instance
-    -   [`huma.NewCLI`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#NewCLI) creates a new CLI instance
-    -   [`huma.Hooks`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#Hooks) for startup / shutdown
-    -   [`huma.WithOptions`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#WithOptions) wraps a command with options parsing
-    -   [`huma.API`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#API) the API instance
+    -   [`huma.CLI`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#CLI) the CLI instance
+    -   [`huma.NewCLI`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#NewCLI) creates a new CLI instance
+    -   [`huma.Hooks`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#Hooks) for startup / shutdown
+    -   [`huma.WithOptions`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#WithOptions) wraps a command with options parsing
+    -   [`huma.API`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#API) the API instance
 -   External Links
     -   [Cobra](https://cobra.dev/) CLI library

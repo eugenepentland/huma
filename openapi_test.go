@@ -3,7 +3,7 @@ package huma_test
 import (
 	"testing"
 
-	"github.com/danielgtaylor/huma/v2"
+	"github.com/eugenepentland/huma/v2"
 	"github.com/stretchr/testify/require"
 )
 

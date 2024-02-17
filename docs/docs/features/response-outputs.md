@@ -13,7 +13,7 @@ Huma uses the following default response status codes:
 -   `200` for responses with bodies
 -   `204` for responses without a body
 
-You can override this behavior in two ways. The first is by setting [`huma.Operation`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#Operation) `DefaultStatus` field at operation registration time.
+You can override this behavior in two ways. The first is by setting [`huma.Operation`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#Operation) `DefaultStatus` field at operation registration time.
 
 ```go title="code.go"
 // Register an operation with a default status code of 201.
@@ -106,7 +106,7 @@ You can also stream the response body, see [streaming](./response-streaming.md) 
 ## Dive Deeper
 
 -   Reference
-    -   [`huma.Register`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#Register) registers new operations
-    -   [`huma.Operation`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#Operation) the operation
+    -   [`huma.Register`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#Register) registers new operations
+    -   [`huma.Operation`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#Operation) the operation
 -   External Links
     -   [HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)

@@ -4,7 +4,7 @@ description: Level up your API with tests & code coverage using built-in test ut
 
 # Writing Tests
 
-Huma provides a number of helpers for testing your API. The most important is the [`humatest`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2/humatest) package, which allows you to run a test server and make requests against it.
+Huma provides a number of helpers for testing your API. The most important is the [`humatest`](https://pkg.go.dev/github.com/eugenepentland/huma/v2/humatest) package, which allows you to run a test server and make requests against it.
 
 ## Testable Code
 
@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/danielgtaylor/huma/v2"
-	"github.com/danielgtaylor/huma/v2/adapters/humachi"
+	"github.com/eugenepentland/huma/v2"
+	"github.com/eugenepentland/huma/v2/adapters/humachi"
 	"github.com/go-chi/chi/v5"
 )
 
@@ -97,7 +97,7 @@ func main() {
 
 ## Writing Tests
 
-Use the [`humatest`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2/humatest) package to create a test API and then register your routes against it. Next, make get or post requests against it to test the various user scenarios you have to support:
+Use the [`humatest`](https://pkg.go.dev/github.com/eugenepentland/huma/v2/humatest) package to create a test API and then register your routes against it. Next, make get or post requests against it to test the various user scenarios you have to support:
 
 ```go title="main_test.go" linenums="1"
 package main
@@ -106,7 +106,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/danielgtaylor/huma/v2/humatest"
+	"github.com/eugenepentland/huma/v2/humatest"
 )
 
 func TestGetGreeting(t *testing.T) {
@@ -171,4 +171,4 @@ Want to learn more about how testing works? Check these out next:
 
 -   [Operations](../features/operations.md)
 -   [Test Utilities](../features/test-utilities.md)
--   [`humatest`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2/humatest) reference
+-   [`humatest`](https://pkg.go.dev/github.com/eugenepentland/huma/v2/humatest) reference

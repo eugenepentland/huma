@@ -57,7 +57,7 @@ nav:
           - "Test Utilities": features/test-utilities.md
       - "Clients":
           - "CLI AutoConfig": features/cli-auto-config.md
-  - "Go Reference": "https://pkg.go.dev/github.com/danielgtaylor/huma/v2?tab=doc"
+  - "Go Reference": "https://pkg.go.dev/github.com/eugenepentland/huma/v2?tab=doc"
 theme:
   name: material
   logo: logo.png

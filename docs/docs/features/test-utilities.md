@@ -4,7 +4,7 @@ description: Test your API with the built-in test utilities.
 
 # Test Utilities
 
-Huma includes a [`humatest`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2/humatest) package to make it easier to write tests for your API.
+Huma includes a [`humatest`](https://pkg.go.dev/github.com/eugenepentland/huma/v2/humatest) package to make it easier to write tests for your API.
 
 ## Creating a Test API
 
@@ -14,7 +14,7 @@ The first step is to create a test API instance. This is a router-agnostic API i
 import (
 	"testing"
 
-	"github.com/danielgtaylor/huma/v2/humatest"
+	"github.com/eugenepentland/huma/v2/humatest"
 )
 
 func TestMyAPI(t *testing.T) {
@@ -82,6 +82,6 @@ Use whatever assertion library you want to make these checks. [`stretchr/testify
 -   Tutorial
     -   [Writing Tests](../tutorial/writing-tests.md)
 -   Reference
-    -   [`humatest`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2/humatest)
+    -   [`humatest`](https://pkg.go.dev/github.com/eugenepentland/huma/v2/humatest)
 -   External Links
     -   [Go testing](https://pkg.go.dev/testing)

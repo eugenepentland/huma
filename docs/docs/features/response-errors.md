@@ -22,7 +22,7 @@ The error functions are named like `Error{code}{name}` and accept a message and 
 
 !!! warning "Default Error Response"
 
-    If the error returned has no associated HTTP status code, for example you use `fmt.Errorf("my error")`, then the default error response code is `500 Internal Server Error`. Use [`huma.NewError`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#NewError) to return an error with a custom status code.
+    If the error returned has no associated HTTP status code, for example you use `fmt.Errorf("my error")`, then the default error response code is `500 Internal Server Error`. Use [`huma.NewError`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#NewError) to return an error with a custom status code.
 
 ## Error Model
 
@@ -58,9 +58,9 @@ Link: </schemas/ErrorModel.json>; rel="describedBy"
 }
 ```
 
-The `errors` field is optional and may contain more details about which specific errors occurred. See [`huma.ErrorModel`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#ErrorModel) for more details.
+The `errors` field is optional and may contain more details about which specific errors occurred. See [`huma.ErrorModel`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#ErrorModel) for more details.
 
-To display a `location`, `message`, and `value` in the errors array, use the [`huma.ErrorDetail`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#ErrorDetail) struct. If you need to wrap this with custom logic for any reason, you can implement the [`huma.ErrorDetailer`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#ErrorDetailer) interface.
+To display a `location`, `message`, and `value` in the errors array, use the [`huma.ErrorDetail`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#ErrorDetail) struct. If you need to wrap this with custom logic for any reason, you can implement the [`huma.ErrorDetailer`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#ErrorDetailer) interface.
 
 ### Exhaustive Errors
 
@@ -94,7 +94,7 @@ This means it is possible to, for example, get an HTTP `408 Request Timeout` res
 
 It is possible to provide your own error model and have the built-in error utility functions use that model instead of the default one. This is useful if you want to provide more information in your error responses or your organization has requirements around the error response structure.
 
-This is accmplished by defining your custom model as a [`huma.StatusError`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#StatusError) and then overriding the built-in [`huma.NewError`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#NewError) function:
+This is accmplished by defining your custom model as a [`huma.StatusError`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#StatusError) and then overriding the built-in [`huma.NewError`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#NewError) function:
 
 ```go title="code.go" hl_lines="1-13 16-26 36"
 type MyError struct {
@@ -139,15 +139,15 @@ func main() {
 }
 ```
 
-To change the default content type that is returned, you can also implement the [`huma.ContentTypeFilter`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#ContentTypeFilter) interface.
+To change the default content type that is returned, you can also implement the [`huma.ContentTypeFilter`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#ContentTypeFilter) interface.
 
 ## Dive Deeper
 
 -   Reference
-    -   [`huma.ErrorModel`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#ErrorModel) the default error model
-    -   [`huma.ErrorDetail`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#ErrorDetail) describes location & value of an error
-    -   [`huma.StatusError`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#StatusError) interface for custom errors
-    -   [`huma.ContentTypeFilter`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#ContentTypeFilter) interface for custom content types
+    -   [`huma.ErrorModel`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#ErrorModel) the default error model
+    -   [`huma.ErrorDetail`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#ErrorDetail) describes location & value of an error
+    -   [`huma.StatusError`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#StatusError) interface for custom errors
+    -   [`huma.ContentTypeFilter`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#ContentTypeFilter) interface for custom content types
 -   External Links
     -   [HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
     -   [RFC 9457](https://tools.ietf.org/html/rfc9457) Problem Details for HTTP APIs

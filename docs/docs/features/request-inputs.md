@@ -108,8 +108,8 @@ huma.Register(api, huma.Operation{
 -   Tutorial
     -   [Your First API](../tutorial/your-first-api.md) includes registering an operation with a path param
 -   Reference
-    -   [`huma.Register`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#Register) registers new operations
-    -   [`huma.Operation`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#Operation) the operation
+    -   [`huma.Register`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#Register) registers new operations
+    -   [`huma.Operation`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#Operation) the operation
 -   External Links
     -   [OpenAPI 3.1 Operation Object](https://spec.openapis.org/oas/v3.1.0#operation-object)
     -   [OpenAPI 3.1 Parameter Object](https://spec.openapis.org/oas/v3.1.0#parameter-object)

@@ -52,7 +52,7 @@ type SchemaProvider interface {
 }
 ```
 
-The [`huma.Registry`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#Registry) is passed to you and can be used to get schemas or refs for any embedded structs. Here is an example, where we want to know if a field was omitted vs. null vs. a value when sent as part of a request body. First we start by defininig the custom generic struct:
+The [`huma.Registry`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#Registry) is passed to you and can be used to get schemas or refs for any embedded structs. Here is an example, where we want to know if a field was omitted vs. null vs. a value when sent as part of a request body. First we start by defininig the custom generic struct:
 
 ```go title="code.go"
 // OmittableNullable is a field which can be omitted from the input,
@@ -125,9 +125,9 @@ See [https://github.com/danielgtaylor/huma/blob/main/examples/omit/main.go](http
 ## Dive Deeper
 
 -   Reference
-    -   [`huma.Schema`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#Schema) is a JSON Schema
-    -   [`huma.Registry`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#Registry) generates & stores JSON Schemas
-    -   [`huma.DefaultSchemaNamer`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#DefaultSchemaNamer) names schemas from types
+    -   [`huma.Schema`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#Schema) is a JSON Schema
+    -   [`huma.Registry`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#Registry) generates & stores JSON Schemas
+    -   [`huma.DefaultSchemaNamer`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#DefaultSchemaNamer) names schemas from types
 -   External Links
     -   [JSON Schema spec](https://json-schema.org/)
     -   [OpenAPI 3.1 spec](https://spec.openapis.org/oas/v3.1.0)

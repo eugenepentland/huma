@@ -59,7 +59,7 @@ huma.Register(api, huma.Operation{
 ## Dive Deeper
 
 -   Reference
-    -   [`autopatch`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2/autopatch) package
+    -   [`autopatch`](https://pkg.go.dev/github.com/eugenepentland/huma/v2/autopatch) package
 -   External Links
     -   [HTTP PATCH Method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PATCH)
     -   [RFC7386 JSON Merge Patch](https://datatracker.ietf.org/doc/html/rfc7386)

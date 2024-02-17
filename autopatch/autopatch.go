@@ -19,8 +19,8 @@ import (
 	"strings"
 
 	"github.com/danielgtaylor/casing"
-	"github.com/danielgtaylor/huma/v2"
 	"github.com/danielgtaylor/shorthand/v2"
+	"github.com/eugenepentland/huma/v2"
 	jsonpatch "github.com/evanphx/json-patch/v5"
 )
 

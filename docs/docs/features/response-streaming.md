@@ -6,7 +6,7 @@ description: Stream data back to the client using a long-lived connection to sup
 
 ## Streaming { .hidden }
 
-The response `Body` can be a callback function taking a [`huma.Context`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#Context) to facilitate streaming. The [`huma.StreamResponse`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#StreamResponse) utility makes this easy to return:
+The response `Body` can be a callback function taking a [`huma.Context`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#Context) to facilitate streaming. The [`huma.StreamResponse`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#StreamResponse) utility makes this easy to return:
 
 ```go title="code.go"
 func handler(ctx context.Context, input *MyInput) (*huma.StreamResponse, error) {
@@ -44,12 +44,12 @@ Also take a look at [`http.ResponseController`](https://pkg.go.dev/net/http#Resp
 
 !!! info "Server Sent Events"
 
-    The [`sse`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2/sse) package provides a helper for streaming Server-Sent Events (SSE) responses that is easier to use than the above example!
+    The [`sse`](https://pkg.go.dev/github.com/eugenepentland/huma/v2/sse) package provides a helper for streaming Server-Sent Events (SSE) responses that is easier to use than the above example!
 
 ## Dive Deeper
 
 -   Reference
-    -   [`huma.Context`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#Context) a router-agnostic request/response context
-    -   [`huma.StreamResponse`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#StreamResponse) for streaming output
+    -   [`huma.Context`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#Context) a router-agnostic request/response context
+    -   [`huma.StreamResponse`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#StreamResponse) for streaming output
 -   External Links
     -   [Server Sent Events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events) for one-way streaming

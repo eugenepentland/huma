@@ -8,7 +8,7 @@ description: Custom validation and transformations for request inputs using simp
 
 Sometimes the built-in validation isn't sufficient for your use-case, or you want to do something more complex with the incoming request object. This is where resolvers come in.
 
-Any input struct can be a resolver by implementing the [`huma.Resolver`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#Resolver) or [`huma.ResolverWithPath`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#ResolverWithPath) interface, including embedded structs. Each resolver takes the current context and can return a list of exhaustive errors. For example:
+Any input struct can be a resolver by implementing the [`huma.Resolver`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#Resolver) or [`huma.ResolverWithPath`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#ResolverWithPath) interface, including embedded structs. Each resolver takes the current context and can return a list of exhaustive errors. For example:
 
 ```go title="code.go"
 // MyInput demonstrates inputs/transformation
@@ -41,7 +41,7 @@ huma.Register(api, huma.Operation{
 
 It is recommended that you do not save the context object passed to the `Resolve` method for later use.
 
-For deeply nested structs within the request body, you may not know the current location of the field being validated (e.g. it may appear in multiple places or be shared by multiple request objects). The [`huma.ResolverWithPath`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#ResolverWithPath) interface provides a path prefix that can be used to generate the full path to the field being validated. It uses a [`huma.PathBuffer`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#PathBuffer) for efficient path generation reusing a shared buffer. For example:
+For deeply nested structs within the request body, you may not know the current location of the field being validated (e.g. it may appear in multiple places or be shared by multiple request objects). The [`huma.ResolverWithPath`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#ResolverWithPath) interface provides a path prefix that can be used to generate the full path to the field being validated. It uses a [`huma.PathBuffer`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#PathBuffer) for efficient path generation reusing a shared buffer. For example:
 
 ```go title="code.go"
 func (m *MyInput) Resolve(ctx huma.Context, prefix *huma.PathBuffer) []error {
@@ -109,6 +109,6 @@ This creates a new `nil` pointer to your struct and assigns it to an unnamed var
 -   How-To
     -   [Custom Validation](../how-to/custom-validation.md) includes using resolvers
 -   Reference
-    -   [`huma.Resolver`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#Resolver) is the basic interface
-    -   [`huma.ResolverWithPath`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#ResolverWithPath) has a path prefix
-    -   [`huma.Context`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#Context) a router-agnostic request/response context
+    -   [`huma.Resolver`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#Resolver) is the basic interface
+    -   [`huma.ResolverWithPath`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#ResolverWithPath) has a path prefix
+    -   [`huma.Context`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#Context) a router-agnostic request/response context

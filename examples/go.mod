@@ -1,12 +1,12 @@
-module github.com/danielgtaylor/huma/v2/examples
+module github.com/eugenepentland/huma/v2/examples
 
 go 1.20
 
-replace github.com/danielgtaylor/huma/v2 => ../
+replace github.com/eugenepentland/huma/v2 => ../
 
 require (
 	github.com/danielgtaylor/huma v1.14.2
-	github.com/danielgtaylor/huma/v2 v2.0.0-00010101000000-000000000000
+	github.com/eugenepentland/huma/v2 v2.0.0-00010101000000-000000000000
 	github.com/danielgtaylor/shorthand/v2 v2.2.0
 	github.com/go-chi/chi v4.1.2+incompatible
 	github.com/go-chi/chi/v5 v5.0.11

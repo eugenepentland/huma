@@ -22,7 +22,7 @@ flowchart LR
 	style Transformer stroke:#f9f,stroke-width:2px,stroke-dasharray: 5 5
 ```
 
-Response transformers enable you to modify the response on the fly. For example, you could add a `Link` header to the response to indicate that the response body is described by a JSON Schema. This is done by implementing the [`huma.Transformer`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#Transformer) interface and registering it with the API.
+Response transformers enable you to modify the response on the fly. For example, you could add a `Link` header to the response to indicate that the response body is described by a JSON Schema. This is done by implementing the [`huma.Transformer`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#Transformer) interface and registering it with the API.
 
 A simple for-fun example might look something like this:
 
@@ -49,10 +49,10 @@ This could be used like so:
 $ restish example.com/things/1 -H 'Fields: {id, tag_names: tags[].name}'
 ```
 
-See the [`huma.SchemaLinkTransformer`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#SchemaLinkTransformer) for a more real-world in-depth example.
+See the [`huma.SchemaLinkTransformer`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#SchemaLinkTransformer) for a more real-world in-depth example.
 
 ## Dive Deeper
 
 -   Reference
-    -   [`huma.Transformer`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#Transformer) response transformers
-    -   [`huma.Config`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#Config) the API config
+    -   [`huma.Transformer`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#Transformer) response transformers
+    -   [`huma.Config`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#Config) the API config

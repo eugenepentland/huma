@@ -51,4 +51,4 @@ Features include:
 
     Hi there! I'm the happy Huma whale here to provide help. You'll see me leave helpful tips throughout the docs.
 
-Official Go package documentation can always be found at [https://pkg.go.dev/github.com/danielgtaylor/huma/v2](https://pkg.go.dev/github.com/danielgtaylor/huma/v2). Read on for an introduction to the various features available in Huma.
+Official Go package documentation can always be found at [https://pkg.go.dev/github.com/eugenepentland/huma/v2](https://pkg.go.dev/github.com/eugenepentland/huma/v2). Read on for an introduction to the various features available in Huma.

@@ -31,7 +31,7 @@ if errs != nil {
 ## Dive Deeper
 
 -   Reference
-    -   [`huma.ModelValidator`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#ModelValidator) the model validator utility
+    -   [`huma.ModelValidator`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#ModelValidator) the model validator utility
 -   External Links
     -   [JSON Schema spec](https://json-schema.org/)
     -   [OpenAPI 3.1 spec](https://spec.openapis.org/oas/v3.1.0)

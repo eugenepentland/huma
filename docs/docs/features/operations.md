@@ -28,7 +28,7 @@ graph TD
     Resource2 --> PUT
 ```
 
-Operations are created using the [`huma.Register`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#Register) function:
+Operations are created using the [`huma.Register`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#Register) function:
 
 ```go
 huma.Register(api, huma.Operation{
@@ -61,7 +61,7 @@ The operation handler function always has the following generic format, where `I
 func(context.Context, *Input) (*Output, error)
 ```
 
-There are many options available for configuring OpenAPI settings for the operation, and custom extensions are supported as well. See the [`huma.Operation`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#Schema) struct for more details.
+There are many options available for configuring OpenAPI settings for the operation, and custom extensions are supported as well. See the [`huma.Operation`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#Schema) struct for more details.
 
 ## Input & Output Models
 
@@ -142,7 +142,7 @@ Read on to learn about how each of these steps works.
 -   Tutorial
     -   [Your First API](../tutorial/your-first-api.md#operation) includes registering an operation
 -   Reference
-    -   [`huma.Register`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#Register) registers new operations
-    -   [`huma.Operation`](https://pkg.go.dev/github.com/danielgtaylor/huma/v2#Operation) the operation
+    -   [`huma.Register`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#Register) registers new operations
+    -   [`huma.Operation`](https://pkg.go.dev/github.com/eugenepentland/huma/v2#Operation) the operation
 -   External Links
     -   [OpenAPI 3.1 Operation Object](https://spec.openapis.org/oas/v3.1.0#operation-object)
